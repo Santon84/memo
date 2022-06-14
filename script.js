@@ -167,8 +167,22 @@ const cards = document.querySelectorAll('.card');
                 }
             } 
             
-            if (i==20) {document.body.style.setProperty('--cols', 5)}
-            if (i==24) {document.body.style.setProperty('--cols', 6)}
+            if (i==20) {
+                if (mediaQuery.matches){
+                
+                document.body.style.setProperty('--cols', 5)
+                } else {
+                    document.body.style.setProperty('--cols', 3)
+                }
+            } 
+            if (i==24) {
+                if (mediaQuery.matches){
+                
+                document.body.style.setProperty('--cols', 6)
+                } else {
+                    document.body.style.setProperty('--cols', 4)
+                }
+            } 
             renderMemoItems(i);
             renderCardItems();
         })
