@@ -59,7 +59,7 @@ max-height: 100vh;
     transform: rotateY(180deg);
     border: 1px solid #000;
     user-select: none;
-    object-fit: scale-down;
+    /* object-fit: scale-down; */
 }
 .card-start {
     font-size: 4rem;
