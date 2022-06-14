@@ -163,7 +163,7 @@ const cards = document.querySelectorAll('.card');
                 
                 document.body.style.setProperty('--cols', 4)
                 } else {
-                    document.body.style.setProperty('--cols', 2)
+                    document.body.style.setProperty('--cols', 3)
                 }
             } 
             
