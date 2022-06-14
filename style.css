@@ -32,7 +32,7 @@ max-height: 100vh;
     justify-content: center;
     overflow: hidden;
     align-items: top;
-    object-fit: contain;
+    object-fit: scale-down;
     cursor: pointer;
     transition: transform 0.6s;
     transform-style: preserve-3d;
