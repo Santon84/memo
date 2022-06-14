@@ -47,8 +47,7 @@ max-height: 100vh;
     width: 100%;
     transform: rotateY(180deg);
     background-color: rgb(238, 167, 142);
-    background-size: cover; /* <-- background size */
-    background-position: center; /* <-- background position */
+    
 }
 
 .card-content {
@@ -60,7 +59,7 @@ max-height: 100vh;
     transform: rotateY(180deg);
     border: 1px solid #000;
     user-select: none;
-    display: block;
+    object-fit: scale-down;
 }
 .card-start {
     font-size: 4rem;
@@ -70,6 +69,7 @@ max-height: 100vh;
     }
 .card-content__clicked {
     opacity: 100;   
+    object-fit: scale-down;
     visibility: visible;
     transform: rotateY(180deg);
 }
