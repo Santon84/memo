@@ -148,6 +148,7 @@ function addZero (num) {
     return num < 10 ? '0'+num : num; 
 }
 
+const mediaQuery = window.matchMedia('(min-width: 768px)')
 
 const cards = document.querySelectorAll('.card');
 
@@ -157,7 +158,15 @@ const cards = document.querySelectorAll('.card');
         card.addEventListener('click', () => {
             
             let i = card.querySelector('.card-start').getAttribute('data-num');
-            if (i==16) {document.body.style.setProperty('--cols', 4)}
+            if (i==16) {
+                if (mediaQuery.matches){
+                
+                document.body.style.setProperty('--cols', 4)
+                } else {
+                    document.body.style.setProperty('--cols', 2)
+                }
+            } 
+            
             if (i==20) {document.body.style.setProperty('--cols', 5)}
             if (i==24) {document.body.style.setProperty('--cols', 6)}
             renderMemoItems(i);
