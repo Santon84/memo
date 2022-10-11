@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+
 * {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --cols: 4;
 }
-html {     
-    height: 100%; 
+
+html {
+    height: 100%;
 }
 
 .conteiner {
-position: absolute;
-width: 100%;
-max-height: 100vh;
+    position: absolute;
+    width: 100%;
+    max-height: 100vh;
 }
 
 .cards {
@@ -32,7 +35,7 @@ max-height: 100vh;
     justify-content: center;
     overflow: hidden;
     align-items: top;
-    
+
     cursor: pointer;
     transition: transform 0.6s;
     transform-style: preserve-3d;
@@ -47,7 +50,7 @@ max-height: 100vh;
     width: 100%;
     transform: rotateY(180deg);
     background-color: rgb(238, 167, 142);
-    
+
 }
 
 .card-content {
@@ -61,14 +64,16 @@ max-height: 100vh;
     user-select: none;
     /* object-fit: scale-down; */
 }
+
 .card-start {
     font-size: 4rem;
     font-weight: 700;
     color: white;
-    
-    }
+
+}
+
 .card-content__clicked {
-    opacity: 100;   
+    opacity: 100;
     object-fit: scale-down;
     visibility: visible;
     transform: rotateY(180deg);
@@ -83,11 +88,11 @@ max-height: 100vh;
 .timer {
     text-align: center;
     font-size: 3rem;
-    font-weight: 700;  
-    transition: 1s;  
+    font-weight: 700;
+    transition: 1s;
 }
 
 .timer__stop {
-    color:red;  
-    font-size: 4rem;  
+    color: red;
+    font-size: 4rem;
 }
